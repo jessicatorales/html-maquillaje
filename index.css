@@ -124,10 +124,6 @@ header a:hover {
   font-size: 1.75em;
 }
 
-#aprende-con-nosotros .container {
-  text-align: center;
-  padding: 200px 12px;
-}
 
 #nuestros-cursos {
   background-color: rgb(30, 30, 30);
@@ -253,6 +249,7 @@ footer .container {
 #aprende-con-nosotros .container {
   display: flex;
   justify-content: space-evenly;
+  padding: 100px 20px;
   background-color: rgb(211, 198, 224);
 
 }
@@ -278,6 +275,8 @@ footer .container {
   background-position: center center;
   height: 500px;
   width: 400px;
+  border-style: solid;
+  border-radius: 10px;
 }
 
 #nuestros-cursos .cursos {
@@ -308,33 +307,43 @@ footer .container {
 #caracteristicas {
   background-image: url(img/estilos.jpeg);
   background-repeat: no-repeat;
-  background-size: 500px 400px;
-  background-position: calc(100vw - 800px);
+  background-size: cover;
+  /* la imagen se ajusta al tamaño del contenedor */
+  /* background-position: center; */
+  /* centrada horizontal y verticalmente */
   background-color: rgb(191, 158, 219);
+
+  display: flex;
+  /* usamos flexbox */
+  justify-content: center;
+  /* centra horizontal */
+  align-items: center;
+  /* centra vertical */
+  min-height: 600px;
+  /* altura mínima del bloque */
 }
 
 #caracteristicas .container {
-  text-align: initial;
+  text-align: center;
+  color: rgb(235, 69, 166);
+  /* opcional: para que el texto se vea sobre la imagen */
+  padding: 20px;
+  border-radius: 10px;
 }
+
 
 #caracteriticas ul {
   margin-left: 100px;
 }
 
-#final h2{
-font-size: 5em;
+#final h2 {
+  font-size: 5em;
 }
 
-#final button{
-font-size: 2em;
+#final button {
+  font-size: 2em;
 }
 
-footer .container{
+footer .container {
   justify-content: flex-end;
-}
-
-@media (min-width: 1200px){
-  #caracteristicas{
-  background-position-x: calc(100vw - 800px);
-}
 }
